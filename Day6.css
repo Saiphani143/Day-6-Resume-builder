@@ -1,0 +1,354 @@
+:root {
+    --primaryColor: rgba(150, 246, 60, 0.929);
+    --secondaryColor:Black;
+    --inputColor: #d3eac4eb;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+    color: #0a346b;
+  }
+  
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .message {
+    color: red;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+  }
+  
+  input,
+  textarea {
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    width: 100%;
+    background: var(--inputColor);
+  }
+  
+  input,
+  textarea:focus {
+    outline: none;
+  }
+  
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  body {
+    background: white;
+  }
+  
+  .container {
+    margin: 1rem;
+  }
+  
+  @media screen and (min-width: 480px) {
+    .container {
+      margin: 3rem 1rem 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 940px) {
+    .container {
+      margin-left: 25rem;
+      margin-right: 25rem;
+    }
+  }
+  
+  .introTxt {
+    margin-bottom: 1rem;
+    font-size: 20px;
+  }
+  
+  .intro {
+    width: 100%;
+    margin: auto;
+    padding: 2rem 0;
+    text-align: center;
+    background: var(--primaryColor);
+    color: var(--secondaryColor);
+  }
+  
+  @media screen and (min-width: 1080px) {
+    .intro h1 {
+      font-size: 45px;
+    }
+  }
+  
+  .intro p {
+    padding: 5px 0 0;
+    margin: auto;
+  }
+  
+  @media screen and (min-width: 1080px) {
+    .intro p {
+      font-size: 25px;
+    }
+  }
+  
+  .top .imgDiv {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem auto 2rem;
+    border: 10px solid rgba(236, 236, 236, 0.808);
+  }
+  
+  .top .imgDiv:hover #imgBtn {
+    display: block;
+  }
+  
+  .top .imgDiv img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .top .imgDiv #file {
+    display: none;
+  }
+  
+  .top .imgDiv #imgBtn {
+    position: absolute;
+    width: 100%;
+    background: #000000a6;
+    text-align: center;
+    padding: 0.7rem 0.7rem 0.8rem;
+    bottom: -10px;
+    left: 0;
+    color: var(--secondaryColor);
+    cursor: pointer;
+    font-size: 15px;
+    display: none;
+    -webkit-transition: display 0.5s ease;
+    transition: display 0.5s ease;
+  }
+  
+  .top .name div {
+    margin: 10px 0;
+  }
+  
+  .top .name input {
+    display: block;
+    margin: 8px 0;
+    background: var(--inputColor);
+  }
+  
+  .top .contact div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align:center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px 0;
+  }
+  
+  .top .contact div .icon {
+    margin: 0 10px;
+  }
+  
+  .experienceDiv div {
+    margin-bottom: 10px;
+  }
+  
+  .experienceDiv input {
+    margin-top: 5px;
+    background: var(--inputColor);
+  }
+  
+  .experienceDiv .date {
+    margin: 1rem 0;
+    gap: 1rem;
+  }
+  
+  .experienceDiv .date div {
+    margin: 10px 0;
+  }
+  
+  @media screen and (min-width: 428px) {
+    .experienceDiv .date {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  }
+  
+  .experienceDiv .description label {
+    margin-bottom: 10px;
+  }
+  
+  .experienceDiv .description textarea {
+    height: 200px;
+    width: 100%;
+  }
+  
+  .btn button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: var(--primaryColor);
+    color: var(--secondaryColor);
+    font-size: 15px;
+    width: 50%;
+    cursor: pointer;
+  }
+  
+  .btn button:focus {
+    outline: none;
+  }
+  
+  .btn button:hover {
+    background: #000000a6;
+  }
+  
+  .profile div {
+    margin-bottom: 10px;
+  }
+  
+  .profile input,
+  .profile textarea {
+    margin-top: 10px;
+    background: var(--inputColor);
+  }
+  
+  .profile .date {
+    margin: 1rem 0;
+    gap: 1rem;
+  }
+  
+  .profile .date div {
+    margin: 10px 0;
+  }
+  
+  @media screen and (min-width: 428px) {
+    .profile .date {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  }
+  
+  .profile #summary {
+    height: 200px;
+  }
+  
+  @media screen and (min-width: 480px) {
+    .profile .flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      gap: 1rem;
+    }
+  }
+  
+  .profile .skills button,
+  .profile .hobbies button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 1rem;
+    background: var(--primaryColor);
+    color: var(--secondaryColor);
+    font-size: 15px;
+    width: auto;
+    cursor: pointer;
+  }
+  
+  .profile .skills button:focus,
+  .profile .hobbies button:focus {
+    outline: none;
+  }
+  
+  .profile .skills button:hover,
+  .profile .hobbies button:hover {
+    background: #000000a6;
+  }
+  
+  .mainBtn {
+    width: 100%;
+  }
+    #downloadBtn {
+      display: none;
+      background: #4acf4a;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    
+    #downloadBtn:hover {
+      background: #6cbe6c;
+    }
+    
+    @media screen and (min-width: 480px) {
+      .gridCol {
+        display: -ms-grid;
+        display: grid;
+      
+            grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+    }
+    
+    @media screen and (min-width: 800px) {
+      .skillsGridCol {
+        display: -ms-grid;
+        display: grid;
+      
+            grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+    }
+    
+   
+    
+    @media screen and (min-width: 900px) {
+      .top {
+    
+            grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .mainBtn #previewBtn {
+      padding: 10px;
+      margin: auto;
+      color: var(--secondaryColor);
+      background:#25cf19;
+      border: none;
+      font-size: 20px;
+      border-radius: 5px;
+      width: 100%;
+      cursor: pointer;
+    }
+    .mainBtn #previewBtn:hover {
+      background: #25cf19;
+    }
